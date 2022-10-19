@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;}
+
+body{
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}
+
+/* HEADER */
+header{
+    height: 100%;
+    background: #4d4d5c;
+    padding: 0 2%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 70px;
+    height: 70px;
+}
+
+h1{
+    color: #6cc091;
+    font-weight: 200;
+    padding-right: 100px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: #6cc091;
+    transition: 0.4s;
+}
+
+#check{
+    display: none;
+}
+
+/* BANNER */
+.banner{
+    padding: 0 50px;
+    background-image: url(./asset/atardecerkay2.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner, .contenido-banner2{
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-banner h3{
+    font-size: 30px;
+    font-weight: 800;
+    padding: 10px 0px;
+}
+
+
+/* INFO */
+.info{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.info div{
+    padding: 30px 30px;
+}
+
+.info div h4{
+    color: #4d4d5c;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.info div p{
+    color: #2d2d3be6;
+    font-size: 18px;
+}
+
+.boton-leer-mas{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:600;
+    color:#6cc091;
+    padding: 10px 30px;
+    border: 2px solid #6cc091;
+    border-radius: 30px;
+    margin: 0.5em 0 0;
+    align-self: baseline;
+    transition: 0.4s;
+}
+
+.boton-leer-mas:hover{
+    background: #6cc091;
+    color: white;
+}
+
+/* MARCAS */
+.marcas img{
+    width: 100px;
+    height: 100px;
+    transition: 0.8s;
+}
+
+.marcas img:hover {
+    transform:scale(1.4);
+    overflow: hidden;
+    transition: 0.8s;
+  }
+
+.contenido-marcas{
+    padding: 30px 0 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:space-around;
+}
+
+.contenido-marcas div{
+    margin: 70px 10px;
+}
+
+/* FOOTER */
+footer{
+    position: absolute;
+    background-color: #4d4d5c;
+    bottom: 0;
+    padding: 0.5rem;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+    /*background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 90px;*/
+
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px 0 0 5px;
+}
+
+.redsoc{
+    color: white;
+    font-size: 1.9vw;
+    padding: 20px 15px;
+}
+
+.redsoc:hover{
+    color: #6cc091;
+    transition: 0.4s;
+}
+
+/* kayak.html */
+.kayak{
+    padding: 0 50px;
+    background-image: url("./asset/rio-parana2.JPG");
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.banner2{
+    padding: 0 50px ;
+    background-image: url(./asset/modkayak2.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner2::before{
+    content: "";
+    background: rgba(77, 77, 92, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+
+.contenido-banner2 H2{
+    color: #fff;
+    font-weight: 500;
+    padding-top: 150px;
+}
+
+.kayak img{
+    padding: 15px 0;
+    width: 200px;
+}
+
+
+.cont-rocker,
+.cont-sit,
+.cont-atlanti{
+    display: flex;
+    flex-direction: column;
+}
+
+.kayak .ver-mas{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:600;
+    color:#6cc091;
+    padding: 10px 30px 0 0;
+    margin-top: 15px;
+    transition: 0.4s;
+}
+
+.ver-mas:hover{
+    color: #234231;
+}
+
+/* IMG.html */
+.descrip-rocker{
+    padding: 2% 0;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.descrip-rocker img{
+    width: 700px;
+    display: flex;
+    flex-direction:column;
+}
+
+.modelos .descrip-rocker .one{
+    margin:  0 1% ;
+}
+
+.modelos h2{
+    text-align: center;
+    font-weight: 800;
+    color: #6cc091;
+}
+.modelos .btn-volver #ancla0{
+    margin-top: 1%;
+}
+
+.btn-volver{
+    margin-top: 5px;
+    text-align: center;
+}
+
+#ancla0{
+    margin: 10px 0.5% ;
+}
+
+#ancla2{
+    margin: 1%;
+}
+
+/* IndumySegu.html */
+.secciones{
+    border: 2px lightgreen solid;
+    height: 200px;
+    margin: 0.5rem;
+}
+
+.container{
+    margin: 0 0 0 80px;
+    width:100%;
+    max-width: 1200px;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .card{
+    width: 250px;
+    height: 470px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 150px;
+    height: 200px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    color: #6cc091;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cont-calzado{
+    border: 2px pink solid;
+    margin: 0 0.5rem 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+
+    .contenido-marcas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido-marcas img{
+        padding: 30px 0px;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #check:checked ~ .menu{
+        right: 0;
+    }
+
+    /* INFO */
+    .info{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .marcas img{
+        width: 150px;
+        height: 150px;
+        padding: 10px 0px;
+    }
+
+    .marcas img:hover{
+        width: 180px;
+        height: 180px;
+        transition: 0.8s;
+    }
+
+    .redsoc{
+        color: white;
+        font-size: 1.8vw;
+        padding: 20px;
+    }
+
+    .redes .redsoc{
+        font-size: 15px;
+    }
+}
+
+/* RESPONSIVE CELULAR */
+@media (max-width:390px){
+
+    .logo{
+        display: none;
+    }
+
+    h3 span{
+        font-size: 20px;
+
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    .contenido-marcas img{
+        padding: 10px 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .contenido-marcas img:hover{
+        width: 120px;
+        height: 120px;
+        transition: 0.4s;
+    }
+
+    .redes .redsoc{
+        font-size: 15px;
+    }
+
+    .contenido-marcas{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .contenido-banner2 h2{
+        display: none;
+    }
+}
