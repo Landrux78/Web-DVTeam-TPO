@@ -235,6 +235,7 @@ footer p{
 .contenido-banner2 H2{
     color: #fff;
     font-weight: 500;
+    font-size: 30px;
     padding-top: 150px;
 }
 
@@ -308,9 +309,30 @@ footer p{
 
 /* IndumySegu.html */
 .secciones{
+    background-image: url(./asset/one.jpg);
+    width: 65%;
     border: 2px lightgreen solid;
-    height: 200px;
-    margin: 0.5rem;
+    height: 525px;
+    margin: 20px 0 0 60px;
+    display: inline-block;
+}
+
+.secciones h3{
+    color: #6cc091;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.secciones p{
+    text-align:justify;
+}
+
+.lateral{
+    border: 2px blue solid;
+    width: 20%;
+    height: 400px;
+    display: inline-block;
+    margin: 0 60px 0;
 }
 
 .container{
@@ -325,7 +347,7 @@ footer p{
 
 .container .card{
     width: 250px;
-    height: 470px;
+    height: 400px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -345,7 +367,7 @@ footer p{
 }
 
 .container .card h4{
-    font-weight: 600;
+    font-weight: 500;
     color: #6cc091;
 }
 
