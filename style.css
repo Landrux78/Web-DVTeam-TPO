@@ -458,6 +458,13 @@ footer p{
     background: #4fa776ad;
 }
 
+#error{
+    color: blue;
+    font-size:15px;
+    font-weight:300;
+    text-align:center;
+}
+
 
 /* RESPONSIVE */
 @media (max-width:768px){

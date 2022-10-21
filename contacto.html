@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="./asset/kayfishico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5e97cba96.js" crossorigin="anonymous"></script>
-    
     <title>DVTeam KayakFishing</title>
 </head>
 
@@ -54,6 +53,7 @@
                 <input type="submit" class="boton-leer-mas"  value="Enviar">
             </div>
         </form>
+        <div id="error" ></div>
     </section>
 
     <footer class="redes">
@@ -63,14 +63,13 @@
         <a class="redsoc" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
     <p>&copy Dorado Viejo Team 2022</p>
 </footer>
-
 <script>
     const $form = document.querySelector(".form")
 
     $form.addEventListener("submit", handleSubmit)
 
-    async function handleSubmit(event){
-        event.preventDefault()
+    async function handleSubmit(evt){
+        evt.preventDefault()
         const form = new FormData(this)
         const response = await fetch(this.action,  {
             method: this.method,
@@ -85,6 +84,7 @@
         }
     }
 </script>
-https://www.youtube.com/watch?v=s3pC93LgP18
+<script src="app.js"></script>
+
 </body>
 </html>
