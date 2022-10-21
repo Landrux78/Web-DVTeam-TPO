@@ -403,7 +403,7 @@ footer p{
     font-size: 25px;
     margin-bottom:20px;
 }
-.contacto form{
+.contacto #form{
     max-width: 80%;
     margin: 0 auto;
 }
@@ -417,21 +417,47 @@ footer p{
     flex: 1;
 }
 
-form label{
+.form label{
     display: block;
     margin-bottom: 10px;
 }
 
-form input,
-form textarea{
+.form input,
+.form textarea{
     background: #6cc091;
     border-radius:10px;
     border: 2px solid #8dcca9;
     padding: 10px 5px;
     outline: 0;
     color: #fff;
-    width: 50%;
+    width: 100%;
 }
+
+.form input:focus,
+.form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.boton-formulario input{
+    display:inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+    width: 8em;
+}
+
+.boton-formulario .boton-leer-mas:hover{
+    background: #4fa776ad;
+}
+
 
 /* RESPONSIVE */
 @media (max-width:768px){
@@ -516,6 +542,12 @@ form textarea{
     .redes .redsoc{
         font-size: 15px;
     }
+
+    /* FORMULARIO */
+    .datos-form{
+        flex-direction: column;
+    }
+
 }
 
 /* RESPONSIVE CELULAR */
@@ -561,5 +593,14 @@ form textarea{
 
     .contenido-banner2 h2{
         display: none;
+    }
+
+     /* FORMULARIO */
+    .datos-form{
+        flex-direction: column;
+    }
+
+    .contacto{
+        padding: 0 0 150px;
     }
 }

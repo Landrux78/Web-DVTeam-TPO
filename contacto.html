@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./asset/kayfishico.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a5e97cba96.js" crossorigin="anonymous"></script>
+    
     <title>DVTeam KayakFishing</title>
 </head>
 
@@ -31,10 +32,10 @@
         </label>
         </nav>
     </header>
-
+    
     <section class="contacto">
         <h4>Contacta con nosotros</h4>
-        <form action="#">
+        <form id="form" class="form" action="https://formspree.io/f/xwkznygy" method="POST">
             <div class="datos-form">
                 <div class="nombre">
                     <label for="Nombre">Nombre</label>
@@ -50,18 +51,10 @@
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
             </div>
             <div class="boton-formulario">
-                <a href="#" class="boton-leer-mas">Enviar</a>
+                <input type="submit" class="boton-leer-mas"  value="Enviar">
             </div>
         </form>
-
     </section>
-
-
-
-
-
-
-
 
     <footer class="redes">
         <a class="redsoc" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a> 
@@ -70,5 +63,28 @@
         <a class="redsoc" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
     <p>&copy Dorado Viejo Team 2022</p>
 </footer>
+
+<script>
+    const $form = document.querySelector(".form")
+
+    $form.addEventListener("submit", handleSubmit)
+
+    async function handleSubmit(event){
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action,  {
+            method: this.method,
+            body: form,
+            headers:{
+                "Accept": "application/json"
+            }
+        })
+        if (response.ok){
+            this.reset()
+            alert("Gracias por contactarme te estaremos contactando pronto")
+        }
+    }
+</script>
+https://www.youtube.com/watch?v=s3pC93LgP18
 </body>
 </html>
