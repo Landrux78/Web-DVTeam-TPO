@@ -103,6 +103,12 @@ h1{
     padding: 10px 0px;
 }
 
+.banner img{
+    width: 200px;
+    display: flex;
+    margin: 30px 10px 0 1000px;
+}
+
 
 /* INFO */
 .boton-leer-mas{
@@ -213,20 +219,41 @@ footer p{
 }
 
 /* kayak.html */
-.kayak{
-    padding: 0 50px;
-    background-image: url("./asset/rio-parana2.JPG");
-    height: 45vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+.banner2{
+    min-height: 100vh;
+    position: relative;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: #1c1c1d;
+    opacity: 0,5;
+    mix-blend-mode: overlay;*/
+}
+
+.video h1{
+    color: #6cc091;
+    text-align:center;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
 }
 
 .banner2{
     padding: 0 50px ;
-    background-image: url(./asset/modkayak2.jpg);
     height: 45vh;
     background-size: cover;
     background-position: center;
@@ -240,12 +267,22 @@ footer p{
     height: 45vh;
     left: 0;
 }
-
 .contenido-banner2 H2{
     color: #fff;
     font-weight: 500;
     font-size: 30px;
     padding-top: 150px;
+    z-index: 1;
+}
+
+.kayak{
+    padding: 0 50px;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .kayak img{
@@ -253,12 +290,12 @@ footer p{
     width: 200px;
 }
 
-
 .cont-rocker,
 .cont-sit,
 .cont-atlanti{
     display: flex;
     flex-direction: column;
+    z-index: 3;
 }
 
 .kayak .ver-mas{
@@ -458,7 +495,6 @@ footer p{
     margin: 50px 70px;
     display: flex;
     justify-content: space-between;
-    
 }
 
 /* FORMULARIO */
@@ -552,12 +588,36 @@ footer p{
     h3{
         text-align: center;
     }
-    
-    .contenido-marcas{
+
+    .banner{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .container{
+        margin: auto auto auto;
+    }
+
+    .marcas{
+        margin: auto auto auto;
+    }
+
+    .marcas img{
+        width: 150px;
+        height: 150px;
+        padding: 10px 5px 10px;
+    }
+
+    .redsoc{
+        color: white;
+        font-size: 1.8vw;
+        padding: 20px;
+    }
+
+    .redes .redsoc{
+        font-size: 15px;
     }
 
     .contenido-marcas img{
@@ -598,28 +658,6 @@ footer p{
         flex-direction: column;
     }
 
-    .marcas img{
-        width: 150px;
-        height: 150px;
-        padding: 10px 0px;
-    }
-
-    .marcas img:hover{
-        width: 180px;
-        height: 180px;
-        transition: 0.8s;
-    }
-
-    .redsoc{
-        color: white;
-        font-size: 1.8vw;
-        padding: 20px;
-    }
-
-    .redes .redsoc{
-        font-size: 15px;
-    }
-
     /* FORMULARIO */
     .datos-form{
         flex-direction: column;
@@ -647,16 +685,21 @@ footer p{
         width: 100%;
     }
 
-    .contenido-marcas img{
-        padding: 10px 0px;
-        width: 100px;
-        height: 100px;
+    .container{
+        margin: 0 20px 0;
     }
 
-    .contenido-marcas img:hover{
-        width: 120px;
-        height: 120px;
-        transition: 0.4s;
+    .contenido-marcas{
+        width: 60px;
+        height:120px;
+    }
+
+    .contenido-marcas p{
+        display: none;
+    }
+
+    .contenido-marcas img{
+        width: 100%;
     }
 
     .redes .redsoc{
