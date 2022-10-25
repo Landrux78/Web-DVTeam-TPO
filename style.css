@@ -703,9 +703,18 @@ video{
         display: none;
     }
 
-    h3 span{
-        font-size: 20px;
+    .banner .contenido-banner h3 {
+        animation:none;
+        display: none;
+        font-size:20px;
+    }
 
+    .banner img{
+        margin-left: 140px;
+    }
+
+    .contacto h4{
+        padding: 20px;
     }
 
     h1{
