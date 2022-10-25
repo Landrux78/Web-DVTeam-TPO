@@ -133,21 +133,19 @@ h1{
 /* MARCAS */
 .marcas{
     margin: 10px 0 0 80px;
-    width:100%;
+    width:70%;
     max-width: 1200px;
-    height:auto;
+    height:50%;
+    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .marcas .contenido-marcas{
-    width: 30%;
-    height: 20%px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(1, 0, 0, 0.9);
     overflow: hidden;
-    margin: 20px 0 55px;
+    margin: 0px 10px 50px ;
     text-align: center;
     transition: all 0.25s;
 }
@@ -157,14 +155,11 @@ h1{
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-/*.marcas img{
-    border-radius:20px;
-    width: 100px;
-    height: 100px;
-    transition: 0.8s;
+.contenido-marcas img{
+    width: 60%;
 }
 
-.marcas img:hover {
+/*.marcas img:hover {
     transform:scale(1.4);
     overflow: hidden;
     transition: 0.8s;
@@ -222,6 +217,10 @@ footer p{
 .banner2{
     min-height: 100vh;
     position: relative;
+    padding: 0 50px ;
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
 }
 
 video{
@@ -233,17 +232,6 @@ video{
     object-fit: cover;
 }
 
-.capa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /*background: #1c1c1d;
-    opacity: 0,5;
-    mix-blend-mode: overlay;*/
-}
-
 .video h1{
     color: #6cc091;
     text-align:center;
@@ -252,21 +240,6 @@ video{
     z-index: 2;
 }
 
-.banner2{
-    padding: 0 50px ;
-    height: 45vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.banner2::before{
-    content: "";
-    background: rgba(77, 77, 92, 0.2);
-    position: absolute;
-    width: 100%;
-    height: 45vh;
-    left: 0;
-}
 .contenido-banner2 H2{
     color: #fff;
     font-weight: 500;
@@ -276,18 +249,20 @@ video{
 }
 
 .kayak{
-    padding: 0 50px;
+    padding: 50px 50px;
     height: 45vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: space-around;
     text-align: center;
+    margin: 0 0 50px;
 }
 
 .kayak img{
-    padding: 15px 0;
+    padding: 10px 0;
     width: 200px;
+    margin: 5px auto;
 }
 
 .cont-rocker,
@@ -305,7 +280,7 @@ video{
     font-weight:600;
     color:#6cc091;
     padding: 10px 30px 0 0;
-    margin-top: 15px;
+    margin-top: 10px ;
     transition: 0.4s;
 }
 
@@ -313,18 +288,73 @@ video{
     color: #234231;
 }
 
+.banner2 p{
+    color: #f6efef;
+    position: relative;
+    font-size:17px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 5px 10px;
+}
+
+.banner2 h4{
+    position:relative;
+    font-size:1.5rem;
+    color:#6cc091;
+    margin: 10px 5px;
+}
+
 /* IMG.html */
-.descrip-rocker{
+
+/*.slider-frame{
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+    
+    0%{margin-left:0%;}
+    20%{margin-left:0%;}
+    
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+}*/
+
+.modelos .descrip-rocker{
     padding: 2% 0;
     padding-bottom: 50px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction:column;
 }
 .descrip-rocker img{
-    width: 700px;
-    display: flex;
-    flex-direction:column;
+    width: 30%;
 }
 
 .modelos .descrip-rocker .one{
@@ -601,12 +631,13 @@ video{
     }
 
     .marcas{
-        margin: auto auto auto;
+        display: flex;
+        width: 100%;
     }
 
     .marcas img{
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         padding: 10px 5px 10px;
     }
 
@@ -686,16 +717,13 @@ video{
     }
 
     .container{
-        margin: 0 20px 0;
+        margin: 0 10px 10px;
     }
 
-    .contenido-marcas{
-        width: 60px;
-        height:120px;
-    }
-
-    .contenido-marcas p{
-        display: none;
+    .marcas{
+        display:grid;
+        grid-column: 1;
+        width: 50%;
     }
 
     .contenido-marcas img{
@@ -704,11 +732,6 @@ video{
 
     .redes .redsoc{
         font-size: 15px;
-    }
-
-    .contenido-marcas{
-        flex-direction: column;
-        padding-bottom: 30px;
     }
 
     .contenido-banner2 h2{
