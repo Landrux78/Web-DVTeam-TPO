@@ -218,13 +218,13 @@ footer p{
     min-height: 100vh;
     position: relative;
     padding: 0 50px ;
-    height: 45vh;
+    height: 80vh;
     background-size: cover;
     background-position: center;
 }
 
 video{
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -232,120 +232,116 @@ video{
     object-fit: cover;
 }
 
-.video h1{
+.banner2 .models h1{
     color: #6cc091;
+    margin: 0 0 0 100px;
+    padding-top: 10px;
     text-align:center;
     font-weight: 600;
     position: relative;
     z-index: 2;
 }
 
-.contenido-banner2 H2{
-    color: #fff;
-    font-weight: 500;
-    font-size: 30px;
-    padding-top: 150px;
-    z-index: 1;
+.banner2 .models h4{
+    position: relative;
+    color: #6cc091;
+    font-size: 20px;
+    padding:20px 10px;
+    z-index: 2;
 }
 
-.kayak{
-    padding: 50px 50px;
-    height: 45vh;
-    background-size: cover;
-    background-position: center;
+.models p{
+    color: #f6efef;
+    position: relative;
+    font-size:19px;
+    font-weight: 500;
+    text-align: justify;
+    margin: 0 10px;
+    z-index: 2;
+}
+
+.cartel{
     display: flex;
     justify-content: space-around;
-    text-align: center;
-    margin: 0 0 50px;
+}
+.kayak{
+    overflow: hidden;
 }
 
 .kayak img{
-    padding: 10px 0;
-    width: 200px;
-    margin: 5px auto;
+    position: relative;
+    padding: 15px 50px;
+    height: 20vh;
+    z-index: 2;
 }
 
-.cont-rocker,
-.cont-sit,
-.cont-atlanti{
-    display: flex;
-    flex-direction: column;
-    z-index: 3;
+.kayak h4{
+    position:relative;
+    font-size:1.5rem;
+    color:#6cc091;
+    margin: 0 0 0 25px ;
+    z-index: 2;
 }
 
 .kayak .ver-mas{
+    position: relative;
     display: inline-block;
     text-decoration: none;
     font-size: 20px;
     font-weight:600;
     color:#6cc091;
     padding: 10px 30px 0 0;
-    margin-top: 10px ;
+    margin: 0 0 0 25px ;
     transition: 0.4s;
+    z-index: 2;
 }
 
 .ver-mas:hover{
     color: #234231;
 }
 
-.banner2 p{
-    color: #f6efef;
-    position: relative;
-    font-size:17px;
-    font-weight: 500;
-    text-align: justify;
-    margin: 5px 10px;
-}
-
-.banner2 h4{
-    position:relative;
-    font-size:1.5rem;
-    color:#6cc091;
-    margin: 10px 5px;
-}
-
 /* IMG.html */
 
-/*.slider-frame{
-    width: 1280px;
-    height: auto;
-    margin: 50px auto 0;
-    overflow: hidden;
-
-    animation: slide 16s infinite alternate ease-in-out;
+.slider {
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
 }
 
-.slider-frame ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 500%;
+	
+	animation: cambio 25s infinite alternate linear;
 }
 
-.slider-frame li{
-    list-style: none;
-    width: 100%;
+.slider li {
+	width: 100%;
+	list-style: none;
 }
 
-.slider-frame img{
-    width: 100%;
+.slider img {
+	width: 100%;
+    height: 80%;
 }
 
-@keyframes slide{
-    0%{margin-left:0%;}
-    20%{margin-left:0%;}
-    
-    0%{margin-left:0%;}
-    20%{margin-left:0%;}
-    
-    25%{margin-left:-100%;}
-    45%{margin-left:-100%;}
-    
-    50%{margin-left:-200%;}
-    70%{margin-left:-200%;}
-    
-    75%{margin-left:-300%;}
-    95%{margin-left:-300%;}
-}*/
+@keyframes cambio {
+	0% {margin-left: 0;}
+	15% {margin-left: 0;}
+	
+	20% {margin-left: -100%;}
+	40% {margin-left: -100%;}
+	
+	45% {margin-left: -200%;}
+	65% {margin-left: -200%;}
+	
+	70% {margin-left: -300%;}
+	85% {margin-left: -300%;}
+
+    90% {margin-left: -400%;}
+	100% {margin-left: -400%;}
+}
 
 .modelos .descrip-rocker{
     padding: 2% 0;
