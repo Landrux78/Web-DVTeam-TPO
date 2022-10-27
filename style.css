@@ -292,59 +292,18 @@ video{
 }
 
 /* IMG.html */
-
-.slider {
-	width: 50%;
-	margin: auto;
-	overflow: hidden;
+.descrip-rocker .mod{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:80px;
 }
 
-.slider ul {
-	display: flex;
-	padding: 0;
-	width: 500%;
-	
-	animation: cambio 25s infinite alternate linear;
-}
-
-.slider li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider img {
-	width: 100%;
-    height: 80%;
-}
-
-@keyframes cambio {
-	0% {margin-left: 0;}
-	15% {margin-left: 0;}
-	
-	20% {margin-left: -100%;}
-	40% {margin-left: -100%;}
-	
-	45% {margin-left: -200%;}
-	65% {margin-left: -200%;}
-	
-	70% {margin-left: -300%;}
-	85% {margin-left: -300%;}
-
-    90% {margin-left: -400%;}
-	100% {margin-left: -400%;}
-}
-
-.modelos .descrip-rocker{
-    padding: 2% 0;
-    padding-bottom: 50px;
-    display: flex;
-    flex-direction:column;
-}
 .descrip-rocker img{
-    width: 30%;
+    width: 20%;
+    margin: 20px;
 }
 
-.modelos .descrip-rocker .one{
+.modelos .descrip-rocker .mod{
     margin:  0 1% ;
 }
 
@@ -358,7 +317,7 @@ video{
 }
 
 .btn-volver{
-    margin-top: 5px;
+    margin: 5px 0 35px auto;
     text-align: center;
 }
 
@@ -506,6 +465,24 @@ video{
     color: black;
     margin: 10px 100px;
     text-align: justify;
+}
+
+main{
+    display: flex;
+}
+
+aside{
+    width: 300px;
+    height:600px;
+    border: solid 2px black;
+    margin: 100px 80px 0 0;
+}
+
+aside h4{
+    color: #6cc091;
+    text-align: center;
+    margin-top:10px;
+    font-size: 20px;
 }
 
 .ifra-kay{
