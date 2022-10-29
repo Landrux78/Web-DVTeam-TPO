@@ -49,7 +49,7 @@ h1{
 .hist p{
     font-size: 15px;
     font-weight: 500;
-    margin: 10px 100px;
+    margin: 10px 10%;
 }
 
 .menu a{
@@ -88,7 +88,8 @@ h1{
 .banner{
     background-image: url(./asset/rocker/one-1.jpg);
     height: 100vh;
-    width: 100%;
+    width: 80vw;
+    margin: 0 10% 0 10%;
     background-size: cover;
     background-position: center;
 }
@@ -120,7 +121,7 @@ h1{
 .banner img{
     width: 200px;
     display: flex;
-    margin: 40px 10px 0 1000px;
+    margin: 40px 10px 0 850px;
 }
 
 /* INFO */
