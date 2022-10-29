@@ -10,8 +10,8 @@ body{
     overflow-x: hidden;
     position: relative;
     padding-bottom: 3em;
-    min-height: 100vh;
-    
+    min-height: 100%;
+    min-width: 100%;
 }
 
 /*.back-body{
@@ -708,7 +708,7 @@ aside img{
 }
 
 /* RESPONSIVE CELULAR */
-@media (max-width:720px){
+@media (max-width:390px){
     body{
         width: 100vw;
         overflow-x: hidden;
