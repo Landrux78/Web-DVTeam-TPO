@@ -708,6 +708,14 @@ aside img{
 
 /* RESPONSIVE CELULAR */
 @media (max-width:390px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        padding-bottom: 3em;
+        min-height: 100vh;
+    }
+
     .logo{
         display: none;
     }
