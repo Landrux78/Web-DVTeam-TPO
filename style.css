@@ -708,7 +708,7 @@ aside img{
 }
 
 /* RESPONSIVE CELULAR */
-@media (max-width:390px){
+@media (max-width:720px){
     body{
         width: 100vw;
         overflow-x: hidden;
