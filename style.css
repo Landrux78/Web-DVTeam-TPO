@@ -117,11 +117,11 @@ h1{
     padding: 10px 0px;
 }
 
-/*.banner img{
+.banner img{
     width: 200px;
     display: flex;
     margin: 40px 10px 0 1000px;
-}*/
+}
 
 /* INFO */
 .boton-leer-mas{
@@ -712,7 +712,7 @@ aside img{
     body{
         width: 100vw;
         overflow-x: hidden;
-        position: relative;
+        position: absolute;
         padding-bottom: 3em;
         min-height: 100vh;
         box-sizing: border-box;
