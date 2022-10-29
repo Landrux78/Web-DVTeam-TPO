@@ -89,7 +89,6 @@ h1{
     background-image: url(./asset/rocker/one-1.jpg);
     height: 100vh;
     width: 100vw;
-    margin-right: 10px;
     background-size: cover;
     background-position: center;
 }
@@ -729,12 +728,17 @@ aside img{
         text-align:justify;
     }
 
+    .banner{
+        width: 500px;
+        height:500px;
+    }
+
     .banner img{
         display: none;
     }
 
     .contenido-banner{
-        margin-bottom: 450px;
+        margin-bottom: 700px;
     }
 
     .contenido-banner2 h2{
