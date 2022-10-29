@@ -87,7 +87,7 @@ h1{
 .banner{
     padding: 0 50px;
     background-image: url(./asset/rocker/one-1.jpg);
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -119,7 +119,7 @@ h1{
 .banner img{
     width: 200px;
     display: flex;
-    margin: 20px 10px 0 1000px;
+    margin: 40px 10px 0 1000px;
 }
 
 /* INFO */
@@ -608,7 +608,7 @@ aside img{
 
 
 /* RESPONSIVE */
-@media (max-width:768px){
+@media (max-width:765px){
     *{
         margin: 0;
         padding: 0;
