@@ -6,14 +6,16 @@
     font-family: 'Montserrat', sans-serif;}
 
 body{
+    width: 100%;
+    overflow-x: hidden;
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
 }
 
-.back-body{
+/*.back-body{
     background: #eafff3;
-}
+}*/
 
 /* HEADER */
 header{
