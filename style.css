@@ -88,6 +88,7 @@ h1{
 .banner{
     background-image: url(./asset/rocker/one-1.jpg);
     height: 100vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
 }
