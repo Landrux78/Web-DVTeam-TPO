@@ -11,6 +11,7 @@ body{
     position: relative;
     padding-bottom: 3em;
     min-height: 100vh;
+    
 }
 
 /*.back-body{
@@ -85,7 +86,6 @@ h1{
 
 /* BANNER */
 .banner{
-    padding: 0 50px;
     background-image: url(./asset/rocker/one-1.jpg);
     height: 100vh;
     background-size: cover;
