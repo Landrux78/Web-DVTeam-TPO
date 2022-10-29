@@ -729,8 +729,7 @@ aside img{
     }
 
     .banner{
-        width: 500px;
-        height:500px;
+        width: 100%;
     }
 
     .banner img{
