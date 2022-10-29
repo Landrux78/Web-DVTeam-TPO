@@ -711,6 +711,7 @@ aside img{
     body{
         width: 100%;
         overflow-x: hidden;
+        overflow-y: hidden;
         position: relative;
         padding-bottom: 3em;
         min-height: 100vh;
