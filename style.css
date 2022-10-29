@@ -44,10 +44,9 @@ h1{
 }
 
 .hist p{
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 500;
-    margin: 10px 50px;
-
+    margin: 10px 100px;
 }
 
 .menu a{
@@ -231,7 +230,7 @@ footer p{
     color: #6cc091;
     font-size: 20px;
     padding:20px 10px;
-    margin-left: 40px;
+    margin-left: 90px;
     z-index: 2;
 }
 
@@ -241,7 +240,7 @@ footer p{
     font-size:19px;
     font-weight: 500;
     text-align: justify;
-    margin: 10px 50px 0 50px;
+    margin: 10px 100px;
     z-index: 2;
 }
 
@@ -621,6 +620,7 @@ aside img{
     }
 
     h3{
+        color: #6cc091;
         text-align: center;
     }
 
@@ -710,6 +710,11 @@ aside img{
 
     .logo{
         display: none;
+    }
+
+    .hist p{
+        margin: 15px;
+        text-align:justify;
     }
 
     .banner .contenido-banner h3 {
